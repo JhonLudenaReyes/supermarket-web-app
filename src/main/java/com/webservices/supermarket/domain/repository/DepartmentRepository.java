@@ -1,14 +1,17 @@
 package com.webservices.supermarket.domain.repository;
 
+import java.util.List;
+import java.util.Optional;
+
 import com.webservices.supermarket.persistence.model.Department;
 
 public interface DepartmentRepository {
 
-	//List<Producto> getAll();
+	List<Department> getAll();
 	//Optional<List<Producto>> getByCategory(int categoryId);
-	//Optional<List<Producto>> getScaresProducts(int quantity);
-	//Optional<Producto> getProduct(int productId);
+	Optional<List<Department>> getActiveDepartments();
+	Optional<Department> getDepartment(int departmentId);
 	Department save(Department department);
-	//void delete(int productId);
+	void delete(int departmentId);
 	
 }

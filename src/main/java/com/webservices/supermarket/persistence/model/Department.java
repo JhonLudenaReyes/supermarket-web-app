@@ -14,7 +14,7 @@ public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "department_id")
-	private Integer deparmentId;
+	private Integer departmentId;
 	
 	@Column(columnDefinition = "varchar(45)")
 	private String department;
@@ -22,12 +22,12 @@ public class Department {
 	//@Column(columnDefinition = "varchar(1) default 'A'")
 	private String state = "A";
 
-	public Integer getDeparmentId() {
-		return deparmentId;
+	public Integer getDepartmentId() {
+		return departmentId;
 	}
 
-	public void setDeparmentId(Integer deparmentId) {
-		this.deparmentId = deparmentId;
+	public void setDepartmentId(Integer departmentId) {
+		this.departmentId = departmentId;
 	}
 
 	public String getDepartment() {
