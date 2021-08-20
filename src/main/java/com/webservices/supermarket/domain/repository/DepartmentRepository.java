@@ -8,7 +8,6 @@ import com.webservices.supermarket.persistence.model.Department;
 public interface DepartmentRepository {
 
 	List<Department> getAll();
-	//Optional<List<Producto>> getByCategory(int categoryId);
 	Optional<List<Department>> getActiveDepartments();
 	Optional<Department> getDepartment(int departmentId);
 	Department save(Department department);

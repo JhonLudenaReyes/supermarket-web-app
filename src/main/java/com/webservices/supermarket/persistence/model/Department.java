@@ -1,10 +1,13 @@
 package com.webservices.supermarket.persistence.model;
 
+//import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+//import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -22,6 +25,9 @@ public class Department {
 	//@Column(columnDefinition = "varchar(1) default 'A'")
 	private String state = "A";
 
+	//@OneToMany(mappedBy = "department")
+    //private List<Category> categories;
+	
 	public Integer getDepartmentId() {
 		return departmentId;
 	}
@@ -45,4 +51,5 @@ public class Department {
 	public void setState(String state) {
 		this.state = state;
 	}
+	
 }
