@@ -18,5 +18,17 @@ public class CategoryService {
 	public Optional<List<Category>> getCategories(){
 		return categoryRepository.getCategories();
 	}
+	
+	public Optional<List<Category>> getActiveCategories(){
+		return categoryRepository.getActiveCategories();
+	}
+	
+	public Optional<Category> getCategory(int categoryId){
+		return categoryRepository.getCategory(categoryId);
+	}
+	
+	public Category save(Category category) {
+		return categoryRepository.save(category);
+	}
 
 }

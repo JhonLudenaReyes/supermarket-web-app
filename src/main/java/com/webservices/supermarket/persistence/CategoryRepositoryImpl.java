@@ -23,4 +23,23 @@ public class CategoryRepositoryImpl implements CategoryRepository{
 		return categories;
 	}
 
+	@Override
+	public Category save(Category category) {
+		// TODO Auto-generated method stub
+		return categoryDaoRepository.save(category);
+	}
+
+	@Override
+	public Optional<List<Category>> getActiveCategories() {
+		// TODO Auto-generated method stub
+		Optional<List<Category>> categories = categoryDaoRepository.findByState("A");
+		return categories;
+	}
+
+	@Override
+	public Optional<Category> getCategory(int categoryId) {
+		// TODO Auto-generated method stub
+		return categoryDaoRepository.findById(categoryId);
+	}
+
 }

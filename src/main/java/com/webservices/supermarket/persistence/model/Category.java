@@ -18,8 +18,8 @@ public class Category {
 	@Column(name = "category_id")
 	private Integer categoryId;
 	
-	//@Column(name = "department_id")
-	//private Integer departmentId;
+	@Column(name = "department_id")
+	private Integer departmentId;
 	
 	@Column(columnDefinition = "varchar(45)")
 	private String category;
@@ -36,6 +36,14 @@ public class Category {
 
 	public void setCategoryId(Integer categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public Integer getDepartmentId() {
+		return departmentId;
+	}
+
+	public void setDepartmentId(Integer departmentId) {
+		this.departmentId = departmentId;
 	}
 
 	public String getCategory() {

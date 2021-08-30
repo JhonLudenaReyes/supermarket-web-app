@@ -8,5 +8,8 @@ import com.webservices.supermarket.persistence.model.Category;
 public interface CategoryRepository {
 	
 	Optional<List<Category>> getCategories();
+	Optional<List<Category>> getActiveCategories();
+	Optional<Category> getCategory(int categoryId);
+	Category save(Category category);
 
 }
