@@ -42,4 +42,10 @@ public class CategoryRepositoryImpl implements CategoryRepository{
 		return categoryDaoRepository.findById(categoryId);
 	}
 
+	@Override
+	public void delete(int categoryId) {
+		// TODO Auto-generated method stub
+		categoryDaoRepository.deleteById(categoryId);
+	}
+
 }

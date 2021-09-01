@@ -11,5 +11,6 @@ public interface CategoryRepository {
 	Optional<List<Category>> getActiveCategories();
 	Optional<Category> getCategory(int categoryId);
 	Category save(Category category);
+	void delete(int categoryId);
 
 }
